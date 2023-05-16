@@ -6,6 +6,7 @@
  * Licence: Creative Commons Attribution-ShareAlike 4.0 International
  * http://creativecommons.org/licenses/by-sa/4.0/
 """
+import pgzrun
 import random
 import math
 
@@ -424,3 +425,5 @@ def update(deltatime):
     game.time += deltatime
     game.ship.update_physics()
     game.check_game_over()
+
+pgzrun.go()
